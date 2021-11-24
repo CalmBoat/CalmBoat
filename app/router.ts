@@ -23,7 +23,7 @@ export default (app: Application) => {
 
   // 获取项目的分支
   router.get('/branch/:id', controller.branch.getList);
-  // 获取单个项目分支信息
+  // 获取单个分支信息
   router.get('/branch/:projectId/:name', controller.branch.getSingleBranch);
   // 创建分支
   router.post('/branch/create', controller.branch.createBranch);
